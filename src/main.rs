@@ -55,8 +55,7 @@ fn main() {
 
     // Control flow
 
-    let x = if true {5} else {6};
-    println!("x is {x}");
+    let x = if true {5} else {6}; 
 
 }
 

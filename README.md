@@ -54,3 +54,13 @@ Rust has a special annotation called the `Copy` trait that we can place on types
 > When a variable is passed to another function, it's ownership is transferred
 
 ## References and Borrowing
+
+1. References allow you to refer to a value without taking ownership of it.
+2. References are created using the & symbol.
+3. Borrowing is the act of creating a reference to a value.
+4. By default, references are immutable, meaning you can't modify the borrowed value.
+5. Mutable references (&mut) allow you to modify the borrowed value.
+6. Rust enforces strict rules for references to prevent data races:
+
+   1. You can have either one mutable reference or any number of immutable references to a value at a time.
+   2. References must always be valid (no dangling references).
